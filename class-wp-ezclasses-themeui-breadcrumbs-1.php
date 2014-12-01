@@ -39,7 +39,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeUI_Breadcrumbs_1') ) {
 		/**
 		 * Kinda like the __construct(), but different. the get_instance() in the master parent calls the ez_init()
 		 */
-		public function ezc_init($arr_args = ''){
+		public function ez__construct($arr_args = ''){
 		
 		  $arr_init_defaults = $this->init_defaults();
 		
