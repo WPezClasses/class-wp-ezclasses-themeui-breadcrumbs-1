@@ -43,7 +43,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeUI_Breadcrumbs_1') ) {
 		
 		  $arr_init_defaults = $this->init_defaults();
 		
-		  $this->_arr_init = WP_ezMethods::ez_array_merge(array($arr_init_defaults, $arr_args));
+		  $this->_arr_init = WPezHelpers::ez_array_merge(array($arr_init_defaults, $arr_args));
 		  
 		}
 		
@@ -70,7 +70,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeUI_Breadcrumbs_1') ) {
 			
 			// Validation
 			
-			if ( WP_ezMethods::array_pass($arr_args) ){
+			if ( WPezHelpers::ez_array_pass($arr_args) ){
 			
 			  $arr_args = array_merge($this->breadcrumbs_defaults(), $arr_args);
 			} else {
@@ -243,7 +243,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeUI_Breadcrumbs_1') ) {
 			 */
 			if ( $this->_arr_init['filters'] ){
 				$arr_defaults_via_filter = apply_filters('filter_ezc_themeui_breadcrumbs_1_defaults', $arr_defaults);
-				$arr_defaults = WP_ezMethods::_ez_array_merge($arr_defaults, $arr_defaults_via_filter);
+				$arr_defaults = WPezHelpers::_ez_array_merge($arr_defaults, $arr_defaults_via_filter);
 			}
 			return $arr_defaults;	
 		}
