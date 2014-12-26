@@ -1,4 +1,4 @@
-<?
+<?php
 /** 
  * WordPress theme breadcrumbs control
  *
@@ -8,24 +8,24 @@
  *
  * LICENSE: TODO
  *
- * @package WP ezClasses
+ * @package WPezClasses
  * @author Mark Simchock <mark.simchock@alchemyunited.com>
  * @since 0.5.0
  * @license TODO
  */
  
- /*
+/**
  * == Change Log == 
  *
  * --- 
-*/
+ */
 
 if ( !defined('ABSPATH') ) {
 	header('HTTP/1.0 403 Forbidden');
     die();
 }
-// -- TODO -----
 
+// -- TODO -----
 
 if (! class_exists('Class_WP_ezClasses_ThemeUI_Breadcrumbs_1') ) {
   class Class_WP_ezClasses_ThemeUI_Breadcrumbs_1 extends Class_WP_ezClasses_Master_Singleton {
@@ -37,7 +37,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeUI_Breadcrumbs_1') ) {
 	}
 		
 		/**
-		 * Kinda like the __construct(), but different. the get_instance() in the master parent calls the ez_init()
+		 * 
 		 */
 		public function ez__construct($arr_args = ''){
 		
@@ -250,4 +250,3 @@ if (! class_exists('Class_WP_ezClasses_ThemeUI_Breadcrumbs_1') ) {
 
 	} // close class
 } // close if class_exists()
-?>
